@@ -1,0 +1,28 @@
+1. DB_connect.R 設定資料庫
+2. FindMode.R 抓取眾數
+3. Airbox_device_id.R 讀取Airbox 資料庫
+3.1 map_reverse(demo).py 呼叫api找行政區資料 輸出'airbox.township.csv'
+3.2 airbox.township.R 讀取'airbox.township.csv'
+
+4. Township,Factory資料準備(.shp)
+4.1 Township_data.R 讀取'mapdata/TOWN_MOI_1070516.shp'
+# 4.2 lat long 怪怪的
+4.3 factory_area_data.R讀取'工業區範圍圖-修正/工業區範圍圖.shp'
+  
+5. CEMS,AirBox,Factory 資料準備(.db)
+5.1 CEMS.township.R 讀取cems.meta 資料庫
+5.2 factory.township.R 讀取factory 資料庫
+
+6. finalplot.R
+6.1 PM2.5熱區
+6.2 CEMS_amount
+6.3 factory_amount
+6.4 cems_airbox
+6.5 factory_amount
+
+
+7. 篩選指標
+factory 前25%
+PM2.5  濃度30 
+密度比例
+
